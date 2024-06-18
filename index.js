@@ -1,7 +1,6 @@
-const fs = require("fs");
+import {randomSuperhero} from 'superheroes';
 
+randomSuperhero();
 
-fs.readFile("message.txt", "utf8", (err, data) => {
-    if (err) throw err;
-  console.log(data);
-});
+console.log(`I am ${randomSuperhero()}`);
+//=> ['3-D Man', 'A-Bomb', …]
